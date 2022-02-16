@@ -12,14 +12,14 @@ int end();
 int (*ops[5]) (int a, int b);
 
 int main (void) {
-	int op1, op2, operation; 
+	int o, a, b, result; 
 	
 	printf("Operand 'a': ");
-	scanf("%d", &op1);
+	scanf("%d", &a);
 	printf("Operand 'b': ");
-	scanf("%d", &op2);
+	scanf("%d", &b);
 	printf("Specify the operation to perform (0 : add | 1 : subtract | 2 : Multiply | 3 : divide | 4 : exit):\n");
-	scanf("%d", &operation);
+	scanf("%d", &o);
 	
 	ops[0] = add;
 	ops[1] = subtract;
@@ -27,7 +27,7 @@ int main (void) {
 	ops[3] = divide;
 	ops[4] = end;
 
-	int result = (*ops[operation]) (op1, op2);
+	result = (*ops[o]) (a, b);
 	printf("x = %d\n", result);
 
 	return result;

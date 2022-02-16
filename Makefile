@@ -1,6 +1,6 @@
-STUDENT_ID=XXXXXXX
+STUDENT_ID=02893796
 
-TASK1_SRC	:= $(wildcard task1/*.c)
+TASK1_SRC 	:= $(wildcard task1/*.c)
 TASK2_SRC 	:= $(wildcard task2/*.c)
 EXE		:= task1/qsort task2/func_ptr
 
